@@ -1,1 +1,1 @@
-# java-webapplication
+# client-demo-project
