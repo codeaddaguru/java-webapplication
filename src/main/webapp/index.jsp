@@ -91,7 +91,7 @@ button {
 </style>
 <body>
 
-<h2>Modal Signup Form - STP Demo Setup</h2>
+<h2>Modal Signup Form - CodeAddaGuru Deploy Application using ansible</h2>
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
 
