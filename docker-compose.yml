@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+   
+ tomcat-container:
+  build:
+    context: .
+    dockerfile: Dockerfile
+  image: mywebapp
+  container_name: myweb-container
+  ports:
+   - 8099:8080
+
+ portainer:
+   image: portainer/portainer
+   ports: 
+    - 8090:9000
+   volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    

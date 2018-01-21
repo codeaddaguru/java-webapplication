@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+   
+ tomcat-container:
+  image: devopstoolsteam/mywebapp:1.0
+  container_name: mywebapp-prod
+  ports:
+   - 9096:8080
+
+ portainer:
+   image: portainer/portainer
+   ports: 
+    - 9097:9000
+   volumes:
+    - /var/run/docker.sock:/var/run/docker.sock      
+    
